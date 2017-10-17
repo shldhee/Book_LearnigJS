@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // let var1;
+    // let var2 = undefined;
+    // var1;
+    // var2;
+    // undefinedVar;
+
+    if(x !== 3) {
+      console.log(y);
+      var y = 5;
+      if( y === 5 ) {
+        var x = 3;
+      }
+      console.log(y);
+    }
+    if(x === 3) {
+      console.log(y);
+    }
+
+    /*
+      자바스크립트가 해석한 코드
+      var x;
+      var y ;
+      if(x !== 3) {
+        console.log(y);
+        y = 5;
+        if( y === 5 ) {
+          x = 3;
+        }
+        console.log(y);
+      }
+      if(x === 3) {
+        console.log(y);
+      }
+
+    */
+  </script>
+</body>
+</html>

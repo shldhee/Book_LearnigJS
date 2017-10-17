@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const x = 3;
+
+    function f() {
+      console.log(x);
+      console.log(y // error 정적스코프 f() 정의할때 x만 전역변수로 존재, y는 다른 스코프에 존재
+    }
+
+    {
+      const y = 5;
+      f();
+    }
+  </script>
+</body>
+</html>

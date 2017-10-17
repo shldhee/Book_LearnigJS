@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    const o = {
+      name: "binhee",
+      speak() { return `My name is ${this.name}!`; }
+    }
+
+    // 위 this는 객체 o를 가리킨다.
+    // 객체 안에서 this 호출시 객체을 가리킨다.
+    // this는 !!!호출하는 시점!!!에 따라 달라진다.(speak가 o의 프로퍼티여서가 아니라, o에서 speak를 호출했기 때문이다.)
+
+    window.name = `window.speak`;
+
+    const speak = o.speak;
+    speak === o.speak;
+  </script>
+</body>
+</html>
